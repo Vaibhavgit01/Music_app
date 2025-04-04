@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Music_App</title>
+</head>
+
+<body>
+    <header>
+        <img src="images_svg/playlist.svg" alt="playlist" id="playlist-img">
+        <h1>Music App</h1>
+        <img src="images_svg/music.svg" alt="music_img" class="" id="music_img">
+    </header>
+    <main>
+        <div class="left_screen">
+            <!-- song image -->
+            <div class="song-img">
+
+            </div>
+            <div class="volume-div">
+                <div class="volume-img">
+                    <img src="images_svg/volume.svg" alt="volume_img" id="vol-svg">
+
+                </div>
+                <input type="range" id="volume-range" onchange="Volume()">
+            </div>
+        </div>
+        <div class="vol">
+
+        </div>
+        <div class="right_screen">
+            <div class="details">
+                <h3 id="song-name">Song Name</h3>
+                <h4 id="song-artist">Artist name</h4>
+            </div>
+            <input type="range" id="song-duration" onchange="duration()">
+            <div class="controls">
+                <div class="prev-img">
+                    <img src="images_svg/previousicon.svg" alt="Previous" id="prev-img" onclick="PrevSong()">
+                </div>
+                <div class="play-pause">
+                    <img src="images_svg/play.svg" alt="PLay" id="play-pause" onclick="PlayPause()">
+                </div>
+                <div class="next-img">
+                    <img src="images_svg/next.svg" alt="Next" id="next-img" onclick="NextSong()">
+
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="images_svg/Go.jpg" alt="img">
+                <div class="song_details">
+                    <h3>Go Neffex</h3>
+                    <h4>Neffex</h4>
+                </div>
+            </div>
+                <div class="playlist-song">
+                    <img src="images_svg/Cold.jpg" alt="img">
+                    <div class="song_details">
+                        <h3>cold Neffex</h3>
+                        <h4>Neffex</h4>
+                    </div>
+                </div>
+                    <div class="playlist-song">
+                        <img src="images_svg/Destiny.jpg" alt="img">
+                        <div class="song_details">
+                            <h3>Destiny Neffex</h3>
+                            <h4>Neffex</h4>
+                        </div>
+                    </div>
+                    
+                        <div class="playlist-song">
+                            <img src="images_svg/Padman.jpg" alt="img">
+                            <div class="song_details">
+                                <h3>Aaj Se teri</h3>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                        
+                            <div class="playlist-song">
+                                <img src="images_svg/Afsos.jpg" alt="img">
+                                <div class="song_details">
+                                    <h3>Afsos</h3>
+                                    <h4>Anuv Jain & Ap Dhillon</h4>
+                                </div>
+                            </div>
+                        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
